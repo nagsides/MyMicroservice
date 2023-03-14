@@ -1,2 +1,2 @@
 # MyMicroservice
-A sample microservice
+A sample dokerized microservice using dotnet application.
