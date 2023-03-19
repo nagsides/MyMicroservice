@@ -1,0 +1,24 @@
+orbs:
+  win: circleci/windows@5.0
+
+workflows:
+  build-and-unittest:
+    jobs:
+      - build-and-test
+jobs:
+  build-and-test:
+    executor:
+      name: win/default
+      version: edge
+    steps:
+      - checkout
+      - run:
+          name: Build project
+          command: dotnet build
+      - run:
+          name: Run project
+          command: dotnet run
+      - run:
+          name: Publish
+          command: dotnet publish -o publish
+
