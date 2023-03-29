@@ -10,7 +10,7 @@ dotnet run in Windows and dotnet bin/Debug/net7.0/MyMicroservice.dll on GNU/Linu
 
 then on browser
 
-http://localhost:5203/WeatherForecasr
+http://localhost:5203/WeatherForecast
 
 Using Swagger UI
 
